@@ -1,0 +1,6 @@
+<% provide(:title, 'Assignments') %>
+<h1>Documents</h1>
+
+<% if current_user.admin? %>
+	<%= render @photos %>
+<% end %>
